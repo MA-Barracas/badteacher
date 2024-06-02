@@ -31,7 +31,7 @@ with st.sidebar:
         replicate_api = st.secrets['COHERE_API_TOKEN']
     else:
         replicate_api = st.text_input('Enter Cohere API token:', type='password', 
-                                      value="i14FXM7Yc2HEyCFn6Y9XcjmA0kqzmEAu6xWp2hmB")
+                                      value="")
         st.success('Proceed to entering your prompt message!', icon='👉')
             
     os.environ['COHERE_API_TOKEN'] = replicate_api
